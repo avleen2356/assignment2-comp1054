@@ -34,9 +34,11 @@ This  is  the  Scanned image
 The resulting web layout closely resembles the original magazine layout while respecting web design standards and limitations.
 
 ### Screenshots
-
+### 1
 ![1](img/1.PNG)
+### 2
 ![1](img/2.PNG)
+### 3
 ![1](img/3.PNG)
 
 
