@@ -35,9 +35,8 @@ The resulting web layout closely resembles the original magazine layout while re
 
 ### Screenshots
 
-#### Desktop View
-![Desktop View](1.PNG)
+![1](img/1.PNG)
+![1](img/2.PNG)
+![1](img/3.PNG)
 
-#### Mobile View
-![Mobile View](1.PNG)
 
