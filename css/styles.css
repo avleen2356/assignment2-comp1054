@@ -1,0 +1,193 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    font-family: Caveat, cursive;
+  }
+  
+  /* HEADER */
+  h1 {
+    /* Header text styling */
+    font-size: 50px;
+    color: orangered; 
+    grid-column: span 8;
+    text-align: center;
+    /* Spacing between letters */
+    letter-spacing: 20px;
+  }
+  
+  p {
+    font-size: 14px; /* Paragraph text size */
+  }
+  
+  /* MAIN */
+  .main {
+    display: grid;
+    /* Responsive grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    padding: 10px; 
+  }
+  /* Order of main sections */
+  .sections {
+    order: 2;
+  }
+  .asides {
+    order: 1;
+  }
+  
+  /* ASIDES */
+  .asides {
+    /* Scrollable sidebar */
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  /* Hiding scrollbar for WebKit browsers */
+  .asides::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  /* Styling the cards */
+  .card {
+    background-color: #f1f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling the image within the card */
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+  }
+  
+  /* Styling the hover effect on the image */
+  .card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Styling the card caption */
+  .card figcaption {
+    text-align: left;
+    color: rgb(15, 15, 15);
+    margin-bottom: 50px;
+  }
+  
+  /* Styling the emphasized text in the card caption */
+  .card figcaption em {
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  /* Styling for the "On Our Cover" card */
+  .card:nth-child(2) {
+    box-shadow: 0 8px 12px orange;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid orange;
+    margin-left: 5px;
+  }
+  
+  /* Styling for section headings */
+  .heading {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* SECTIONS */
+  .list-item {
+    overflow: hidden;
+  }
+  
+  /* Styling for list items */
+  .list-item:before {
+    content: attr(value);
+    float: left;
+    padding: 0 3px; 
+    margin-right: 10px; 
+    display: flex;
+  }
+  
+  .list-item h3,
+  .list-item p {
+    margin-left: -5px;
+    left: 0;
+  }
+  
+  /* Styling for section title bars */
+  .sections section h2::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: -12px; 
+    left: 0;
+  }
+  
+  /* Green bar for "Live Well" section */
+  .sections section:nth-child(1) h2::before {
+    background-color: green;
+  }
+  
+  .sections section:nth-child(1) h3 {
+    color: green;
+    text-transform: uppercase;
+  }
+  
+  /* Maroon bar for "Style" section */
+  .sections section:nth-child(2) h2::before {
+    background-color: maroon;
+  }
+  
+  .sections section:nth-child(2) h3 {
+    color: maroon;
+    text-transform: uppercase;
+  }
+  
+  /* SkyBlue bar for "Health" section */
+  .sections section:nth-child(3) h2::before {
+    background-color: skyblue;
+  }
+  
+  .sections section:nth-child(3) h3 {
+    color: skyblue;
+    text-transform: uppercase;
+  }
+  
+  /* Styling for section titles */
+  .sections section h2 {
+    position: relative;
+    padding-bottom: 10px; 
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: right;
+  }
+  
+  footer em {
+    color: orange;
+    font-size: 2.5em;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+      grid-column: span 12; 
+      letter-spacing: 8px;
+    }
+    p {
+      font-size: 12px; 
+    }
+  }
+  
